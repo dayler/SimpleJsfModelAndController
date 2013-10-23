@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+    version="2.1">
+	<managed-bean>
+		<managed-bean-name>cardController</managed-bean-name>
+		<managed-bean-class>com.dayler.jsf.sample.controller.CardController</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>card</property-name>
+			<property-class>com.dayler.jsf.sample.domain.Card</property-class>
+			<value>#{card}</value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>card</managed-bean-name>
+		<managed-bean-class>com.dayler.jsf.sample.domain.Card</managed-bean-class>
+		<managed-bean-scope>none</managed-bean-scope>
+	</managed-bean>
+
+</faces-config>
